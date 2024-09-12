@@ -1,0 +1,50 @@
+.Destaque{
+    width: 100%;
+    height: 420px;
+    background-color: var(--azul-destaque);
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.Destaque__Img{
+    width: 590px;
+    height: 310px;
+    align-self:  center;
+    margin-left: 60px;
+     
+}
+
+.Destaque__Texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    color: var(--branco);
+    font-size: 20px;
+    margin-top: 3%;
+    text-align: left;
+    margin-right: 60px;
+    
+}
+
+.Destaque__Texto h1{
+    font-size: 32px;
+
+}
+
+.Destaque__Login{
+    align-self: center;
+    background-color: transparent;
+    border: 2px solid var(--branco);
+    padding: 6px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.Destaque__Login:hover{
+    background-color: var(--azul-medio);
+}

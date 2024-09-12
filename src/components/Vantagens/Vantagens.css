@@ -1,0 +1,75 @@
+.vantagens {
+    margin: 30px 57px;
+    width: calc(100% - 114px); /* Ajuste a largura conforme necessário */
+}
+
+.vantagens-titulo {
+    position: relative;
+    font-size: 38px; /* Tamanho do título */
+    color: var(--cinza-fonte);
+    font-weight: 400;
+    padding-left: 20px; /* Espaço para o retângulo */
+    display: flex;
+    align-items: center;
+}
+
+.vantagens-titulo span {
+    font-weight: 600;
+}
+
+.vantagens-titulo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background-color: var(--azul-escuro);
+}
+
+.vantagens-cards {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte */
+    gap: 20px; /* Espaçamento entre os cards */
+    margin-top: 20px; /* Espaço abaixo do título */
+}
+
+.card-vantagem {
+    display: flex;
+    align-items: center;
+    background: none; 
+    border: none;
+    padding: 0;
+    width: calc(50% - 10px); /* Ajusta a largura para permitir o alinhamento dos cards */
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos nas dimensões */
+}
+
+.card-vantagem:nth-child(4),
+.card-vantagem:nth-child(5) {
+    margin-right: auto; /* Move os últimos dois cards para a direita */
+}
+
+.img-vantagem {
+    /* Definindo dimensões específicas para as imagens */
+    width: 158px; /* Ajuste conforme necessário */
+    height: 122px; /* Ajuste conforme necessário */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+    margin-right: 15px; /* Espaçamento entre a imagem e o texto */
+}
+
+.texto-vantagem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o texto à esquerda */
+}
+
+.texto-vantagem h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.texto-vantagem p {
+    font-size: 24px;
+    color: #666;
+}

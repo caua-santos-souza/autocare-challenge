@@ -1,0 +1,96 @@
+.contato {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte);
+}
+
+.section-contato-titulo {
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--cinza-fonte);
+    font-weight: 700;
+    padding: 0px 20px;
+}
+
+.section-contato-titulo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background-color: var(--azul-escuro);
+}
+
+.section-contato-titulo::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    background-color: var(--azul-escuro);
+}
+
+.container__contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 40px;
+    background-color: var(--branco);
+    border: 2px;
+    border-radius: 5px;
+    margin-top: 60px;
+    width: 600px;
+}
+
+#form-contato {
+    margin-top: 0;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+#form-contato label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+#form-contato input[type="text"],
+#form-contato input[type="email"],
+#form-contato textarea {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 1px solid var(--cinza-medio); /* Usando cinza-medio para a borda */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#form-contato textarea {
+    height: 200px;
+    resize: none;
+    font-family: var(--fonte);
+}
+
+.botao-contato {
+    background-color: var(--azul-destaque); /* Usando azul-destaque para o botão */
+    color: var(--branco);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.botao-contato:hover {
+    background-color: var(--azul-medio); /* Usando azul-medio para o hover */
+}

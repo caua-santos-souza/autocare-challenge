@@ -1,0 +1,59 @@
+.Header {
+    width: 100%;
+    height: auto;
+    background-color: var(--offwhite);
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between;
+}
+
+.Header__Logo {
+    width: 17rem;
+    height: 5rem;
+}
+
+.Header__Nav {
+    display: flex;
+    flex: 1; 
+    padding-left: 575px;
+}
+
+.Header__Link {
+    margin: 0 15px;
+    color: var(--azul-forte);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.Header__Link:hover {
+    color: #0056b3;
+    text-decoration: overline;
+}
+
+.Header__Login {
+    background-color: transparent;
+    border: 2px solid var(--azul-forte);
+    padding: 6px 12px; /* Ajustado para um padding mais consistente */
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--azul-forte);
+    font-weight: 400;
+    font-size: 18px; /* Ajusta o tamanho da fonte para estar em linha com outros links */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Header__Login:hover {
+    background-color: var(--azul-forte);
+    color: var(--offwhite); /* Ajusta a cor do texto no hover */
+}
+
+.Header__Separator {
+    width: 2px;
+    height: 80px; /* Ajuste a altura da barra de separação */
+    background-color: var(--cinza-medio); 
+    margin: 0 20px; /* Ajuste o espaçamento ao redor do separador */
+}
