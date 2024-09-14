@@ -1,5 +1,6 @@
-import Logo from "./assets/logo Header.svg"
-import './Header.css'
+import { Link } from 'react-router-dom'; 
+import Logo from "./assets/logo Header.svg";
+import './Header.css';
 
 const Header = () => {
     return (
@@ -8,15 +9,15 @@ const Header = () => {
                 <img src={Logo} alt="Logo"/>
             </div>
             <nav className="Header__Nav">
-                <a href="#" className="Header__Link">Home</a>
-                <a href="#contato" className="Header__Link">Contato</a>
-                <a href="#faq" className="Header__Link">FAQ</a>
-                <a href="#vantagens" className="Header__Link">Vantagens</a>
+                <Link to="/" className="Header__Link">Home</Link>
+                <Link to="/#contato" className="Header__Link">Contato</Link> {/* Link para Contato */}
+                <Link to="/#faq" className="Header__Link">FAQ</Link> {/* Link para FAQ */}
+                <Link to="/#vantagens" className="Header__Link">Vantagens</Link> {/* Link para Vantagens */}
             </nav>
             <div className="Header__Separator"></div>
-            <a href="/login" className="Header__Login">Acesso à sua conta</a>
+            <Link to="/login" className="Header__Login">Acesso à sua conta</Link>
         </header>
-    )
+    );
 }
 
 export default Header;
