@@ -5,6 +5,7 @@ import Cadastro from './paginas/Cadastro/Cadastro';
 import Login from './paginas/login/login';
 import Dashboard from './paginas/Dashboard/Dashboard';
 import Redefinir from './components/Redefinir/Redefinir';
+import './App.css'
 
 const App: React.FC = () => {
   return (
