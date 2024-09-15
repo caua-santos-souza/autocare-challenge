@@ -1,0 +1,96 @@
+/* VerificarCodigo.css */
+
+.VerificarCodigo__container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.VerificarCodigo__Img {
+    width: 51%;
+    height: 100%;
+}
+
+.VerificarCodigo__conteudo {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 40px 120px;
+    gap: 16px;
+}
+
+.VerificarCodigo__titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.input-verificar {
+    margin-bottom: 20px;
+}
+
+.input-verificar label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-verificar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--cinza-medio);
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 53px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--azul-forte);
+    color: var(--branco);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 56px;
+}
+
+button:hover {
+    background-color: var(--azul-destaque);
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.VerificarCodigo__container__login {
+    margin-top: 32px;
+    display: flex;
+    gap: 5px;
+}
+
+.input__ancora {
+    text-decoration: none;
+    color: var(--azul-forte);
+}
+
+.input__ancora:hover {
+    color: var(--azul-destaque);
+}
+
+@media (max-width: 768px) {
+    .VerificarCodigo__container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .VerificarCodigo__Img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .VerificarCodigo__conteudo {
+        margin: 0;
+    }
+}

@@ -1,6 +1,12 @@
+import FormRegistro from "../../components/FormRegistro/FormRegistro";
+import Header from "../../components/Header/Header";
+
 const cadastro = () => {
     return(
-        <h1>Parabens, vc chorou pro arco!!!</h1>
+        <>
+        <Header />
+        <FormRegistro />
+        </>
     )
 }
 

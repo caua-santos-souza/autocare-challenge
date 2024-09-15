@@ -1,0 +1,79 @@
+.RedefinirSenha__container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.RedefinirSenha__Img {
+    width: 51%;
+    height: 100%;
+}
+
+.RedefinirSenha__conteudo {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 40px 120px;
+    gap: 16px;
+}
+
+.RedefinirSenha__titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.input-redefinir {
+    margin-bottom: 20px;
+}
+
+.input-redefinir label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-redefinir input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--cinza-medio);
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 53px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--azul-forte);
+    color: var(--branco);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 56px;
+}
+
+button:hover {
+    background-color: var(--azul-destaque);
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .RedefinirSenha__container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .RedefinirSenha__Img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .RedefinirSenha__conteudo {
+        margin: 0;
+    }
+}
