@@ -1,0 +1,53 @@
+#sectionParticipantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px; /* Adicionei padding para um melhor espaçamento interno */
+    background-color: var(--offwhite); /* Adicionei uma cor de fundo leve */
+}
+
+
+
+.Titulo__Particpantes {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px; /* Ajustei a margem superior */
+    color: var(--azul-forte); /* Usando a cor principal */
+    font-family: var(--fonte); /* Aplicando a fonte definida */
+}
+
+.integrante {
+    text-align: center;
+    margin-bottom: 40px; 
+    width: 300px; /* Definindo uma largura padrão para os cartões dos integrantes */
+}
+
+.integrante img {
+    width: 150px; /* Ajustando o tamanho da imagem */
+    height: 150px; /* Definindo altura para garantir a forma circular */
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover; /* Garantindo que a imagem se ajuste bem no círculo */
+}
+
+.integrante h3 {
+    margin-bottom: 10px;
+    color: var(--azul-escuro); /* Cor do título */
+    font-family: var(--fonte); /* Aplicando a fonte definida */
+}
+
+.integrante p {
+    margin-bottom: 5px;
+    color: var(--cinza-fonte); /* Cor dos textos */
+    font-family: var(--fonte); /* Aplicando a fonte definida */
+}
+
+.integrante a {
+    color: var(--azul-destaque); /* Cor dos links */
+    text-decoration: none;
+}
+
+.integrante a:hover {
+    color: var(--azul-medio); /* Cor dos links ao passar o mouse */
+}

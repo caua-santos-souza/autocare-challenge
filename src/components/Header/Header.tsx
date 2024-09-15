@@ -13,6 +13,7 @@ const Header = () => {
                 <Link to="/#contato" className="Header__Link">Contato</Link> {/* Link para Contato */}
                 <Link to="/#faq" className="Header__Link">FAQ</Link> {/* Link para FAQ */}
                 <Link to="/#vantagens" className="Header__Link">Vantagens</Link> {/* Link para Vantagens */}
+                <Link to="/sobreNos" className="Header__Link">Sobre Nós</Link>
             </nav>
             <div className="Header__Separator"></div>
             <Link to="/login" className="Header__Login">Acesso à sua conta</Link>

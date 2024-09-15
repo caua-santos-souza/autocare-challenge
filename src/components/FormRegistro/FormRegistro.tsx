@@ -11,6 +11,11 @@ const FormRegistro = () => {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [confirmarSenha, setConfirmarSenha] = useState('');
+    const [modelo, setModelo] = useState('');
+    const [ano, setAno] = useState('');
+    const [cor, setCor] = useState('');
+    const [placa, setPlaca] = useState('');
+    const [marca, setMarca] = useState('');
     const [mensagemErro, setMensagemErro] = useState('');
     const navigate = useNavigate();
 
@@ -38,6 +43,26 @@ const FormRegistro = () => {
         setConfirmarSenha(e.target.value);
     };
 
+    const handleModeloChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setModelo(e.target.value);
+    };
+
+    const handleAnoChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setAno(e.target.value);
+    };
+
+    const handleCorChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setCor(e.target.value);
+    };
+
+    const handlePlacaChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setPlaca(e.target.value);
+    };
+
+    const handleMarcaChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setMarca(e.target.value);
+    };
+
     // Função para lidar com a navegação entre etapas
     const nextStep = (e: React.FormEvent) => {
         e.preventDefault();
@@ -58,11 +83,16 @@ const FormRegistro = () => {
             return;
         }
 
-        setMensagemErro(''); // Limpa a mensagem de erro
-        if (etapa < 3) {
-            setEtapa(etapa + 1); // Avança para a próxima etapa
+        if (etapa === 4 && (!modelo || !ano || !cor || !placa || !marca)) {
+            setMensagemErro('Por favor, preencha todos os campos do veículo.');
+            return;
+        }
+
+        setMensagemErro(''); 
+        if (etapa < 4) {
+            setEtapa(etapa + 1); 
         } else {
-            navigate('/cadastro-veiculo'); // Redireciona para o cadastro de veículo após a última etapa
+            navigate('/dashboard'); 
         }
     };
 
@@ -156,9 +186,69 @@ const FormRegistro = () => {
                             </>
                         )}
 
+                        {etapa === 4 && (
+                            <>
+                                <div className="input-registro">
+                                    <label htmlFor="modelo">Modelo</label>
+                                    <input
+                                        type="text"
+                                        id="modelo"
+                                        value={modelo}
+                                        onChange={handleModeloChange}
+                                        placeholder="Digite o modelo do veículo"
+                                        required
+                                    />
+                                </div>
+                                <div className="input-registro">
+                                    <label htmlFor="ano">Ano</label>
+                                    <input
+                                        type="text"
+                                        id="ano"
+                                        value={ano}
+                                        onChange={handleAnoChange}
+                                        placeholder="Digite o ano do veículo"
+                                        required
+                                    />
+                                </div>
+                                <div className="input-registro">
+                                    <label htmlFor="cor">Cor</label>
+                                    <input
+                                        type="text"
+                                        id="cor"
+                                        value={cor}
+                                        onChange={handleCorChange}
+                                        placeholder="Digite a cor do veículo"
+                                        required
+                                    />
+                                </div>
+                                <div className="input-registro">
+                                    <label htmlFor="placa">Placa</label>
+                                    <input
+                                        type="text"
+                                        id="placa"
+                                        value={placa}
+                                        onChange={handlePlacaChange}
+                                        placeholder="Digite a placa do veículo"
+                                        required
+                                    />
+                                </div>
+                                <div className="input-registro">
+                                    <label htmlFor="marca">Marca</label>
+                                    <input
+                                        type="text"
+                                        id="marca"
+                                        value={marca}
+                                        onChange={handleMarcaChange}
+                                        placeholder="Digite a marca do veículo"
+                                        required
+                                    />
+                                </div>
+                            </>
+                        )}
+
                         {mensagemErro && <p className="error-message">{mensagemErro}</p>}
 
-                        <button type="submit">{etapa < 3 ? 'Continuar' : 'Registrar'}</button>
+                        <button type="submit">{etapa < 4 ? 'Continuar' : 'Registrar'}</button>
                         <p className='Registro__container__login'>
                             Já tem uma conta? <Link to='/login' className='input__ancora'>Faça login</Link>
                         </p>
