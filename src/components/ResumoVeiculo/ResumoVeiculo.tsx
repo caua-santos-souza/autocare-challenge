@@ -1,6 +1,6 @@
 import React from 'react';
 import './ResumoVeiculo.css';
-import veiculoImg from './assets/Fiesta 1.svg'; 
+import veiculoImg from './assets/fiesta.svg'; 
 
 const ResumoVeiculo: React.FC = () => {
     return (
