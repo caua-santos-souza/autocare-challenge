@@ -18,7 +18,7 @@
 .HeaderDashboard__Nav {
     display: flex;
     flex: 1;
-    padding-left: 465px; /* Ajuste conforme necessário */
+    padding-left: 27.5rem; /* Ajuste conforme necessário */
     margin-left: 25rem ;
     transition: transform 0.3s ease;
     /* Transição para o menu hambúrguer */
