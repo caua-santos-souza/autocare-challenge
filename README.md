@@ -34,9 +34,14 @@ npm install emailjs
 
 npm install react-router-dom
 
+# redefinir senha
+
+para receber o codigo na aba refedinir senha, coloque um email real que vc recebera o codigo por email para continuar o layout
+isso só é possivel por causa da biblioteca emaijs instalada anteriormente.
+
 # links
 
 Github:  https://github.com/caua-santos-souza/autocare-challenge
 Youtube: https://www.youtube.com/watch?v=8qC429UR46I
-Vercel:  
+Vercel:  https://autocare-challenge-i2mjqhjhd-caua-dos-santos-projects.vercel.app/
 
