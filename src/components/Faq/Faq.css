@@ -47,16 +47,14 @@
     padding: 0 10px;
     background-color: var(--branco);
     color: var(--cinza-fonte);
-    max-height: 0; 
-    overflow: hidden; 
-    transition: max-height 0.3s ease; 
+    height: 0; /* Altura inicial 0 */
+    overflow: hidden;
+    transition: height 0.3s ease; /* Transição suave da altura */
 }
-
 
 .resposta-faq.aberto {
-    max-height: 200px; 
+    height: auto; /* Altura ajustada automaticamente ao conteúdo */
 }
-
 
 .seta-faq {
     display: inline-block;
@@ -83,4 +81,41 @@
 .seta-faq::before {
     content: "";
     display: none;
+}
+
+@media (max-width: 768px) {
+    .faq {
+        margin: 20px; /* Reduz as margens */
+        width: calc(100% - 40px);
+    }
+
+    .faq__titulo {
+        font-size: 28px; /* Reduz o tamanho da fonte do título */
+        padding-left: 15px; /* Reduz o espaço para o retângulo */
+        margin-bottom: 30px; /* Reduz a margem inferior */
+    }
+
+    .faq__titulo::before {
+        width: 6px; /* Reduz a largura do retângulo */
+    }
+
+    .item-faq {
+        margin-bottom: 15px; /* Reduz a margem inferior */
+    }
+
+    .pergunta-faq {
+        padding: 8px; /* Reduz o padding */
+        font-size: 16px; /* Reduz o tamanho da fonte da pergunta */
+    }
+
+    .resposta-faq {
+        padding: 0; /* Reduz o padding */
+        font-size: 14px; /* Reduz o tamanho da fonte da resposta */
+    }
+
+    .seta-faq {
+        border-left: 5px solid transparent; /* Reduz o tamanho da seta */
+        border-right: 5px solid transparent;
+        border-top: 5px solid var(--azul-destaque);
+    }
 }

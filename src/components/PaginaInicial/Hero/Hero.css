@@ -55,3 +55,47 @@
     width: 50px;
     height: 40px;
 }
+
+@media (max-width: 768px) {
+    .Hero {
+        height: auto; /* Altura ajustada automaticamente */
+        flex-direction: column; /* Elementos empilhados verticalmente */
+        padding: 20px; /* Adiciona padding para evitar que o conteúdo fique colado nas bordas */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .Hero__texto {
+        width: 100%; /* Texto ocupa a largura total da tela */
+        margin-bottom: 20px; /* Adiciona margem inferior ao texto */
+    }
+
+    .Hero__titulo {
+        font-size: 28px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .Hero__conteudo {
+        font-size: 18px; /* Reduz o tamanho da fonte do parágrafo */
+        line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+    }
+
+    .Hero__Img__Botão {
+        width: 100%; /* Imagem e botão ocupam a largura total da tela */
+        align-items: center; /* Centraliza a imagem e o botão horizontalmente */
+    }
+
+    .Hero__Img__Botão img {
+        width: 80%; /* Ajusta a largura da imagem */
+        height: auto;
+        margin-bottom: 20px; /* Adiciona margem inferior à imagem */
+    }
+
+    .Hero__Img__Botão__Botão {
+        font-size: 24px; /* Reduz o tamanho da fonte do botão */
+        padding: 8px 16px; /* Ajusta o padding do botão */
+    }
+
+    .Hero__Botão__Arrow {
+       width: 0px;
+       height: 0px;
+      }
+}

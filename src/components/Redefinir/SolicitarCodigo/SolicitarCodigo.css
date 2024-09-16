@@ -81,16 +81,35 @@ button:hover {
 
 @media (max-width: 768px) {
     .SolicitarCodigo__container {
-        flex-direction: column;
-        margin: 20px;
+      flex-direction: column;
+      margin: 20px;
     }
-
+  
     .SolicitarCodigo__Img {
-        width: 100%;
-        margin-bottom: 20px;
+      display: none; /* Esconde a imagem na responsividade */
     }
-
+  
     .SolicitarCodigo__conteudo {
-        margin: 0;
+      margin: 0; /* Remove a margem do conteúdo */
     }
-}
+  
+    .SolicitarCodigo__titulo {
+      font-size: 20px; /* Reduz o tamanho do título */
+    }
+  
+    .SolicitarCodigo__conteudo p {
+      font-size: 16px; /* Reduz o tamanho do parágrafo */
+    }
+  
+    .input-solicitar {
+      margin-bottom: 15px;
+      width: 90%; /* Reduz a margem inferior dos inputs */
+    }
+  
+    .botao__solicitar {
+      font-size: 14px; /* Reduz o tamanho da fonte do botão */
+      padding: 8px; /* Reduz o padding do botão */
+      width: 90%;
+      
+    }
+  }

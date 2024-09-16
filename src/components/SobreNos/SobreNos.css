@@ -51,3 +51,9 @@
 .integrante a:hover {
     color: var(--azul-medio); /* Cor dos links ao passar o mouse */
 }
+
+@media (max-width: 768px) {
+    .Titulo__Particpantes{
+        font-size: 22px;
+    }
+}

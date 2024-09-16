@@ -60,7 +60,7 @@ const RedefinirSenha: React.FC = () => {
                         />
                     </div>
                     {mensagemErro && <p className="error-message">{mensagemErro}</p>}
-                    <button type="submit">Redefinir Senha</button>
+                    <button className='Botao__Redefinir' type="submit">Redefinir Senha</button>
                 </form>
             </div>
         </section>

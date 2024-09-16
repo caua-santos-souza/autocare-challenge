@@ -49,3 +49,38 @@
     background-color: var(--azul-medio);
 }
 
+@media (max-width: 768px) {
+    .Destaque {
+        height: auto; /* Altura ajustada automaticamente */
+        flex-direction: column; /* Elementos empilhados verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        padding: 20px; /* Adiciona padding para evitar que o conteúdo fique colado nas bordas */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .Destaque__Img {
+        width: 80%; /* Largura da imagem ajustada à tela */
+        height: auto;
+        margin: 0; /* Remove as margens */
+        margin-bottom: 20px; /* Adiciona margem inferior */
+    }
+
+    .Destaque__Texto {
+        align-items: center; /* Centraliza o texto horizontalmente */
+        margin: 0; /* Remove as margens */
+    }
+
+    .Destaque__Texto h1 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .Destaque__Texto p {
+        font-size: 16px; /* Reduz o tamanho da fonte do parágrafo */
+        line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+    }
+
+    .Destaque__Login {
+        padding: 8px 16px; /* Aumenta o padding do botão */
+        font-size: 16px; /* Aumenta o tamanho da fonte do botão */
+    }
+}

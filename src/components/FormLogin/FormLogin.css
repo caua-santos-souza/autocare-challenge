@@ -82,3 +82,49 @@ button:hover {
     color: red;
     margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+    .Login__container {
+        flex-direction: column; /* Empilha a imagem e o conteúdo verticalmente */
+    }
+
+    .Login__Img {
+        width: 100%; /* Imagem ocupa a largura total da tela */
+        height: auto;
+    }
+
+    .Login__conteudo {
+        margin: 20px; /* Reduz as margens do conteúdo */
+    }
+
+    .Login__titulo {
+        font-size: 20px; /* Reduz o tamanho do título */
+    }
+
+    .Login__conteudo p {
+        font-size: 16px; /* Reduz o tamanho do texto */
+    }
+
+    .input-login {
+        margin-bottom: 20px; /* Reduz a margem inferior dos inputs */
+    }
+
+    .senha__texto {
+        flex-direction: column; /* Empilha o label e a âncora verticalmente */
+        align-items: flex-start; /* Alinha o label e a âncora à esquerda */
+    }
+
+    .input__ancora {
+        font-size: 14px; /* Reduz o tamanho da fonte da âncora */
+        margin-top: 5px; /* Adiciona margem superior à âncora */
+    }
+
+    .Login__container__registrar {
+        margin-top: 20px; /* Reduz a margem superior */
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    .Login__Img {
+        display: none; /* Esconde a imagem na responsividade */
+      }
+}

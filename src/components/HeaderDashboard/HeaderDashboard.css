@@ -2,11 +2,12 @@
     width: 100%;
     height: 130px;
     background-color: var(--offwhite);
-    padding: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center; /* Alinha verticalmente os itens */
+    align-items: center;
     justify-content: space-between;
+    position: relative; /* Adiciona o contexto para o menu hambúrguer */
 }
 
 .HeaderDashboard__Logo {
@@ -16,8 +17,11 @@
 
 .HeaderDashboard__Nav {
     display: flex;
-    flex: 1; 
-    padding-left: 58%; /* Ajuste conforme necessário */
+    flex: 1;
+    padding-left: 465px; /* Ajuste conforme necessário */
+    margin-left: 25rem ;
+    transition: transform 0.3s ease;
+    /* Transição para o menu hambúrguer */
 }
 
 .HeaderDashboard__Link {
@@ -36,9 +40,57 @@
 
 .HeaderDashboard__Separator {
     width: 2px;
-    height: 80px; /* Ajuste a altura da barra de separação */
-    background-color: var(--cinza-medio); 
-    margin: 0 20px; /* Ajuste o espaçamento ao redor do separador */
+    height: 80px;
+    background-color: var(--cinza-medio);
+    margin: 0 20px;
+}
+
+/* Estilos para o menu hambúrguer */
+.HeaderDashboard__MenuToggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.HeaderDashboard__MenuIcon {
+    width: 30px;
+    height: 2px;
+    background-color: var(--azul-forte);
+    position: relative;
+}
+
+.HeaderDashboard__MenuIcon::before,
+.HeaderDashboard__MenuIcon::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: var(--azul-forte);
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+}
+
+.HeaderDashboard__MenuIcon::before {
+    top: -8px;
+}
+
+.HeaderDashboard__MenuIcon::after {
+    top: 8px;
+}
+
+.HeaderDashboard__Nav--aberto {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Posição ajustada do menu aberto */
+    left: 0;
+    width: 100%;
+    background-color: var(--offwhite);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
 }
 
 .HeaderDashboard__UserSection {
@@ -57,14 +109,72 @@
     border: 2px solid var(--azul-forte);
     padding: 6px 12px;
     border-radius: 5px;
-    color: var(--azul-forte);
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
+    color: var(--azul-forte);
+    font-weight: 400;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .HeaderDashboard__Logout:hover {
     background-color: var(--azul-forte);
     color: var(--offwhite);
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .HeaderDashboard__Nav {
+        display: none;
+        margin-left: 0rem ;
+
+    }
+
+    .HeaderDashboard__Logo {
+        width: 80px;
+        height: auto;
+        margin-right: 120px;
+        margin-top: 5px;
+    }
+
+    .HeaderDashboard__MenuToggle {
+        display: flex;
+        align-items: center;
+        margin: 0; 
+    }
+
+    .HeaderDashboard {
+        width: 100%;
+        height: 85px;
+        display: flex;
+        flex-direction: row; 
+        justify-content: flex-start; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .HeaderDashboard__Separator {
+        display: none;
+    }
+
+    .HeaderDashboard__Nav--aberto {
+        display: flex;
+    }
+
+    .HeaderDashboard__Nav--aberto .HeaderDashboard__Link {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .HeaderDashboard__UserSection {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: center;
+        margin-left: auto; 
+    }
+
+    .HeaderDashboard__Logout {
+        font-size: 14px;
+
+    }
 }

@@ -30,3 +30,34 @@
     text-align: center;
     margin-bottom: 21px;
   }
+
+  @media (max-width: 768px) {
+    #rodape {
+        margin-top: 50px; /* Reduz a margem superior */
+        margin-bottom: 30px; /* Reduz a margem inferior */
+    }
+
+    .rodape__logos {
+        flex-direction: column; /* Empilha as logos verticalmente */
+        align-items: center; /* Centraliza as logos horizontalmente */
+        margin-bottom: 30px; /* Reduz a margem inferior */
+    }
+
+    .rodape__logo {
+        width: 150px; /* Reduz a largura das logos */
+        height: auto; /* Ajusta a altura proporcionalmente */
+        margin-bottom: 15px; /* Adiciona margem inferior entre as logos */
+    }
+
+    #Logo__porto {
+        width: 120px; /* Reduz a largura do logo Porto Seguro */
+        height: auto;
+        margin-top: 10px; /* Reduz a margem superior */
+    }
+
+    .rodape__texto {
+        font-size: 14px; /* Reduz o tamanho da fonte do texto */
+        line-height: 1.4;
+        margin: 20px; /* Aumenta o espaçamento entre linhas */
+    }
+}

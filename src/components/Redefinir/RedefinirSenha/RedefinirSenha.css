@@ -77,3 +77,40 @@ button:hover {
         margin: 0;
     }
 }
+
+@media (max-width: 768px) {
+    .RedefinirSenha__container {
+      flex-direction: column;
+      margin: 20px;
+    }
+  
+    .RedefinirSenha__Img {
+      display: none; /* Esconde a imagem na responsividade */
+    }
+  
+    .RedefinirSenha__conteudo {
+      margin: 0; /* Remove a margem do conteúdo */
+     
+    }
+  
+    .RedefinirSenha__titulo {
+      font-size: 20px; /* Reduz o tamanho do título */
+      
+    }
+  
+    .RedefinirSenha__conteudo p {
+      font-size: 16px; /* Reduz o tamanho do parágrafo */
+      width: 90%;
+    }
+  
+    .input-redefinir {
+      margin-bottom: 15px; /* Reduz a margem inferior dos inputs */
+      width: 90%;
+    }
+  
+    .Botao__Redefinir {
+      font-size: 14px; /* Reduz o tamanho da fonte do botão */
+      padding: 8px; /* Reduz o padding do botão */
+      width: 90%;
+    }
+  }

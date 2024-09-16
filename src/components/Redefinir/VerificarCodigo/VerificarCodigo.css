@@ -94,3 +94,37 @@ button:hover {
         margin: 0;
     }
 }
+
+@media (max-width: 768px) {
+    .VerificarCodigo__container {
+      flex-direction: column;
+      margin: 20px;
+    }
+  
+    .VerificarCodigo__Img {
+      display: none; /* Esconde a imagem na responsividade */
+    }
+  
+    .VerificarCodigo__conteudo {
+      margin: 0; /* Remove a margem do conteúdo */
+    }
+  
+    .VerificarCodigo__titulo {
+      font-size: 20px; /* Reduz o tamanho do título */
+    }
+  
+    .VerificarCodigo__conteudo p {
+      font-size: 16px; /* Reduz o tamanho do parágrafo */
+    }
+  
+    .input-solicitar {
+      margin-bottom: 15px; /* Reduz a margem inferior dos inputs */
+      width: 90%;
+    }
+  
+    .Botao__Verificar {
+      font-size: 14px; /* Reduz o tamanho da fonte do botão */
+      padding: 8px; /* Reduz o padding do botão */
+      width: 90%;
+    }
+  }

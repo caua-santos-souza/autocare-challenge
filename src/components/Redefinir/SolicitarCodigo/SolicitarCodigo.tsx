@@ -45,7 +45,7 @@ const SolicitarCodigo: React.FC = () => {
                 <h1 className="SolicitarCodigo__titulo">Solicitar Código de Verificação</h1>
                 <p>Para começar a redefinir sua senha, informe seu e-mail abaixo. Você receberá um código de verificação para continuar o processo de recuperação de senha.</p>
                 <form onSubmit={handleSubmit}>
-                    <div className="input-redefinir">
+                    <div className="input-solicitar">
                         <label htmlFor="email">E-mail</label>
                         <input
                             type="email"
@@ -57,7 +57,7 @@ const SolicitarCodigo: React.FC = () => {
                         />
                     </div>
                     {mensagemErro && <p className="error-message">{mensagemErro}</p>}
-                    <button type="submit">Continuar</button>
+                    <button className="botao__solicitar" type="submit">Continuar</button>
                 </form>
             </div>
         </section>

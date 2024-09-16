@@ -73,3 +73,56 @@
     font-size: 24px;
     color: #666;
 }
+
+@media (max-width: 768px) {
+    .vantagens {
+        margin: 10px; /* Reduz as margens */
+        width: calc(100% - 40px); 
+    }
+
+    .vantagens-titulo {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        padding-left: 15px; /* Reduz o espaço para o retângulo */
+    }
+
+    .vantagens-titulo::before {
+        width: 6px; /* Reduz a largura do retângulo */
+    }
+
+    .vantagens-cards {
+        flex-direction: column; /* Empilha os cards verticalmente */
+        gap: 15px; /* Reduz o espaçamento entre os cards */
+    }
+
+    .card-vantagem {
+        width: 100%; /* Cada card ocupa a largura total da tela */
+        flex-direction: column; /* Empilha a imagem e o texto verticalmente */
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+    }
+
+    .img-vantagem {
+        width: 80%; /* Ajusta a largura da imagem */
+        height: auto;
+        margin-right: 0; /* Remove a margem direita da imagem */
+        margin-bottom: 10px; /* Adiciona margem inferior à imagem */
+    }
+
+    .texto-vantagem {
+        align-items: center; /* Centraliza o texto horizontalmente */
+        text-align: center;
+    }
+
+    .texto-vantagem h2 {
+        font-size: 20px; /* Reduz o tamanho da fonte do título do card */
+    }
+
+    .texto-vantagem p {
+        font-size: 16px; /* Reduz o tamanho da fonte da descrição do card */
+        text-align: center; /* Centraliza o texto da descrição */
+    }
+
+    .card-vantagem:nth-child(4),
+    .card-vantagem:nth-child(5) {
+        margin-right: 0; /* Remove a margem direita dos últimos dois cards */
+    }
+}

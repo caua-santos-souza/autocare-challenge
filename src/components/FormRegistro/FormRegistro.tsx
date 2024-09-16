@@ -248,7 +248,7 @@ const FormRegistro = () => {
 
                         {mensagemErro && <p className="error-message">{mensagemErro}</p>}
 
-                        <button type="submit">{etapa < 4 ? 'Continuar' : 'Registrar'}</button>
+                        <button type="submit" className='Botão__registro'>{etapa < 4 ? 'Continuar' : 'Registrar'}</button>
                         <p className='Registro__container__login'>
                             Já tem uma conta? <Link to='/login' className='input__ancora'>Faça login</Link>
                         </p>

@@ -31,7 +31,7 @@ const VerificarCodigo: React.FC = () => {
                 <h1 className="VerificarCodigo__titulo">Insira o Código de Verificação</h1>
                 <p>Insira o código de verificação enviado para o seu e-mail. Esse código é necessário para confirmar sua identidade e prosseguir com a redefinição da senha.</p>
                 <form onSubmit={handleSubmit}>
-                    <div className="input-redefinir">
+                    <div className="input-solicitar">
                         <label htmlFor="codigo">Código de Verificação</label>
                         <input
                             type="text"
@@ -43,7 +43,7 @@ const VerificarCodigo: React.FC = () => {
                         />
                     </div>
                     {mensagemErro && <p className="error-message">{mensagemErro}</p>}
-                    <button type="submit">Verificar Código</button>
+                    <button className='Botao__Verificar' type="submit">Verificar Código</button>
                 </form>
             </div>
         </section>

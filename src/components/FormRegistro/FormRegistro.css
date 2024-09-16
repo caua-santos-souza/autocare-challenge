@@ -1,4 +1,3 @@
-
 .Registro__container {
     display: flex;
     flex-direction: row-reverse;
@@ -45,7 +44,7 @@
 }
 
 
-button {
+.Botão__registro {
     width: 100%;
     padding: 10px;
     background-color: var(--azul-forte);
@@ -57,7 +56,7 @@ button {
     height: 56px;
 }
 
-button:hover {
+.Botão__registro:hover {
     background-color: var(--azul-destaque);
 }
 
@@ -91,11 +90,51 @@ button:hover {
     }
 
     .Registro__Img {
-        width: 100%;
-        margin-bottom: 20px;
+        display: none;
+        /* Esconde a imagem na responsividade */
     }
 
     .Registro__conteudo {
         margin: 0;
+        /* Remove a margem do conteúdo */
+    }
+
+    .Registro__titulo {
+        font-size: 20px;
+        /* Reduz o tamanho do título */
+    }
+
+    .Registro__conteudo p {
+        font-size: 16px;
+        /* Reduz o tamanho do parágrafo */
+    }
+
+    .input-registro {
+        margin-bottom: 15px;
+        /* Reduz a margem inferior dos inputs */
+        width: 90%;
+    }
+
+    .Registro__container__login {
+        margin-top: 20px;
+        /* Reduz a margem superior */
+        font-size: 14px;
+        /* Reduz o tamanho da fonte */
+    }
+
+    .Botão__registro {
+        width: 90%;
+        font-size: 14px;
+        /* Reduz o tamanho da fonte do botão */
+        padding: 8px;
+        /* Reduz o padding do botão */
+    }
+
+    button {
+        font-size: 14px;
+        /* Reduz o tamanho da fonte do botão */
+        padding: 8px;
+        /* Reduz o padding do botão */
+
     }
 }

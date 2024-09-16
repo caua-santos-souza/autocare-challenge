@@ -94,3 +94,42 @@
 .botao-contato:hover {
     background-color: var(--azul-medio); /* Usando azul-medio para o hover */
 }
+
+@media (max-width: 768px) {
+    .contato {
+      padding: 10px; /* Reduz o padding da seção */
+    }
+
+    .section-contato-titulo::after {
+        width: 0px;
+   
+    }
+  
+    .section-contato-titulo {
+      font-size: 1.2rem; /* Reduz o tamanho da fonte do título */
+      padding: 0 20px; /* Reduz o padding do título */
+    }
+  
+    .container__contato {
+      width: 100%; /* Container ocupa 100% da largura da tela */
+      padding: 20px; /* Reduz o padding do container */
+      margin-top: 30px; /* Reduz a margem superior */
+    }
+  
+    #form-contato input[type="text"],
+    #form-contato input[type="email"],
+    #form-contato textarea {
+      width: 100%; /* Inputs e textarea ocupam 100% da largura */
+      margin-bottom: 10px; /* Reduz a margem inferior */
+    }
+  
+    #form-contato textarea {
+      height: 150px; /* Reduz a altura da textarea */
+    }
+  
+    .botao-contato {
+      padding: 10px 20px; /* Reduz o padding do botão */
+    }
+
+   
+  }

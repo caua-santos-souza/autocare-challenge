@@ -1,23 +1,64 @@
-
-
+/* Dashboard.css */
 .dashboard-conteudo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Duas colunas em telas maiores */
     padding: 20px;
     gap: 20px;
 }
 
-.Titulo__dashboard{
+.Titulo__dashboard {
     margin-top: 20px;
     margin-left: 20px;
 }
 
-.btn {
-    background-color: var(--azul-forte);
-    color: var(--branco);
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+/* Media Queries - Responsividade */
+@media (max-width: 768px) {
+    .dashboard-conteudo {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        padding: 10px; /* Reduz o padding */
+    }
+
+    .Titulo__dashboard {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        margin-left: 10px; /* Reduz a margem esquerda */
+    }
+
+    /* ResumoVeiculo.css */
+    .resumo-veiculo {
+        flex-direction: column; /* Empilha a imagem e o texto */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .veiculo-imagem {
+        position: relative; /* Remove o posicionamento absoluto */
+        width: 100%; /* Imagem ocupa a largura total */
+        margin-bottom: 10px; /* Adiciona margem inferior */
+        right: 0; /* Remove a distância da borda direita */
+        top: 0; /* Remove a distância do topo */
+    }
+
+    /* HistoricoManutencao.css */
+    .historico-manutencao h2 {
+        font-size: 18px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .historico-manutencao li {
+        font-size: 14px; /* Reduz o tamanho da fonte dos itens da lista */
+    }
+
+    /* Agendamentos.css */
+    .agendamentos h2 {
+        font-size: 18px; /* Reduz o tamanho da fonte do título */
+    }
+
+    /* NotificacoesAlertas.css */
+    .CardNotificacoesAlertas h2 {
+        font-size: 18px; /* Reduz o tamanho da fonte do título */
+    }
+
+    /* Estilos gerais para botões */
+    .btn {
+        font-size: 14px; /* Reduz o tamanho da fonte do botão */
+        padding: 8px; /* Reduz o padding do botão */
+    }
 }
