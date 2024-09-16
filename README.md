@@ -22,7 +22,9 @@ A justificativa do projeto é: A criação do aplicativo “AutoCare” é uma n
 2. Guilherme Pelissari Feitosa - RM558445
 3. Caua dos Santos Souza - RM559093
 
-## Bibliotecas utilizadas
+## instruções
+Para executar o projeto, você precisará seguir os seguintes passos:
+## Instalar Bibliotecas utilizadas
 
 # emailjs
 
@@ -31,4 +33,10 @@ npm install emailjs
 # router
 
 npm install react-router-dom
+
+# links
+
+Github:  https://github.com/caua-santos-souza/autocare-challenge
+Youtube: https://www.youtube.com/watch?v=8qC429UR46I
+Vercel:  
 

@@ -5,6 +5,7 @@ import Agendamentos from '../../components/Agendamentos/Agendamentos';
 import './Dashboard.css';
 import HeaderDashboard from '../../components/HeaderDashboard/HeaderDashboard';
 import NotificacoesAlertas from '../../components/NotificacoesAlertas/NotificacoesAlertas';
+import Watson from "../../components/Watson/Watson"
 
 const Dashboard: React.FC = () => {
     return (
@@ -16,6 +17,7 @@ const Dashboard: React.FC = () => {
                 <HistoricoManutencao />
                 <Agendamentos />
                 <NotificacoesAlertas />
+                <Watson />
             </div>
         </div>
     );
