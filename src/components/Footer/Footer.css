@@ -31,7 +31,7 @@
     margin-bottom: 21px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 840px) {
     #rodape {
         margin-top: 50px; /* Reduz a margem superior */
         margin-bottom: 30px; /* Reduz a margem inferior */

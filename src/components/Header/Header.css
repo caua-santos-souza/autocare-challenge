@@ -120,7 +120,7 @@
 }
 
 /* Estilos para dispositivos móveis */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .Header__Nav {
         display: none;
         /* Oculta a navegação padrão em dispositivos móveis */

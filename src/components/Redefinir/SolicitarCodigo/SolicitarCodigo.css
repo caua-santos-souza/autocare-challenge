@@ -79,7 +79,7 @@ button:hover {
     color: var(--azul-destaque);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .SolicitarCodigo__container {
       flex-direction: column;
       margin: 20px;

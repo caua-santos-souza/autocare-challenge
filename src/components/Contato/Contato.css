@@ -95,7 +95,7 @@
     background-color: var(--azul-medio); /* Usando azul-medio para o hover */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .contato {
       padding: 10px; /* Reduz o padding da seção */
     }

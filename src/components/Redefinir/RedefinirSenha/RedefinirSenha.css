@@ -78,7 +78,7 @@ button:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .RedefinirSenha__container {
       flex-direction: column;
       margin: 20px;

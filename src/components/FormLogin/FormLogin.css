@@ -83,7 +83,7 @@ button:hover {
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .Login__container {
         flex-direction: column; /* Empilha a imagem e o conteúdo verticalmente */
     }

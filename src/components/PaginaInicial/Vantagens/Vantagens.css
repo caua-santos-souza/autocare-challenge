@@ -74,7 +74,7 @@
     color: #666;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .vantagens {
         margin: 10px; /* Reduz as margens */
         width: calc(100% - 40px); 

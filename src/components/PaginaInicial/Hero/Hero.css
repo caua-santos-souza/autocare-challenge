@@ -56,7 +56,7 @@
     height: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .Hero {
         height: auto; /* Altura ajustada automaticamente */
         flex-direction: column; /* Elementos empilhados verticalmente */

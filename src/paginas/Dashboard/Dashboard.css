@@ -12,7 +12,7 @@
 }
 
 /* Media Queries - Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .dashboard-conteudo {
         grid-template-columns: 1fr; /* Uma coluna em telas menores */
         padding: 10px; /* Reduz o padding */
