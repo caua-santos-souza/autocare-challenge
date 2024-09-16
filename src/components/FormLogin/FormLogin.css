@@ -62,7 +62,7 @@ input {
     height: 53px;
 }
 
-button {
+.botao__login {
     width: 100%;
     padding: 10px;
     background-color: var(--azul-forte); 
@@ -74,7 +74,7 @@ button {
     height: 56px;
 }
 
-button:hover {
+.botao__login:hover {
     background-color: var(--azul-destaque); 
 }
 
@@ -116,11 +116,11 @@ button:hover {
 
     .input__ancora {
         font-size: 14px; 
-        margin-top: 5px; 
+        margin-top: 2px; 
     }
 
     .Login__container__registrar {
-        margin-top: 20px; 
+        margin-top: 32px; 
         font-size: 14px; 
     }
 

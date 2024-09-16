@@ -43,7 +43,7 @@
     height: 53px;
 }
 
-button {
+.botao__solicitar {
     width: 100%;
     padding: 10px;
     background-color: var(--azul-forte);
@@ -55,7 +55,7 @@ button {
     height: 56px;
 }
 
-button:hover {
+.botao__solicitar:hover {
     background-color: var(--azul-destaque);
 }
 

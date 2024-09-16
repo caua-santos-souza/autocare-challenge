@@ -8,9 +8,17 @@ const Header = () => {
 
     const toggleMenu = () => setMenuAberto(!menuAberto);
 
+    const handleMenuToggleFocus = (event: React.FocusEvent<HTMLButtonElement>) => {
+        event.currentTarget.blur(); 
+    };
+
     return (
         <header className="Header">
-            <button className="Header__MenuToggle" onClick={toggleMenu}>
+            <button 
+                className={`Header__MenuToggle ${menuAberto ? 'Header__MenuToggle--aberto' : ''}`} 
+                onClick={toggleMenu}
+                onFocus={handleMenuToggleFocus} 
+            >
                 <span className="Header__MenuIcon"></span>
             </button>
             <div className="Header__Logo">

@@ -41,7 +41,7 @@
     height: 53px;
 }
 
-button {
+.Botao__Redefinir {
     width: 100%;
     padding: 10px;
     background-color: var(--azul-forte);
@@ -53,7 +53,7 @@ button {
     height: 56px;
 }
 
-button:hover {
+.Botao__Redefinir:hover {
     background-color: var(--azul-destaque);
 }
 

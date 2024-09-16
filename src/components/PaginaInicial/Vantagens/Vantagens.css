@@ -126,3 +126,11 @@
         margin-right: 0; /* Remove a margem direita dos últimos dois cards */
     }
 }
+
+@media (max-width: 560px) {
+
+    .vantagens-titulo {
+        font-size: 20px; /* Reduz o tamanho da fonte do título */
+    }
+
+}

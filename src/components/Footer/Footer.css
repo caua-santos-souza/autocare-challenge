@@ -50,14 +50,14 @@
     }
 
     #Logo__porto {
-        width: 120px; /* Reduz a largura do logo Porto Seguro */
+        width: 120px; 
         height: auto;
-        margin-top: 10px; /* Reduz a margem superior */
+        margin-top: 10px; 
     }
 
     .rodape__texto {
-        font-size: 14px; /* Reduz o tamanho da fonte do texto */
+        font-size: 14px; 
         line-height: 1.4;
-        margin: 20px; /* Aumenta o espaçamento entre linhas */
+        margin: 20px; 
     }
 }

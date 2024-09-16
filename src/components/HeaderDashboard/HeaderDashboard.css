@@ -19,9 +19,8 @@
     display: flex;
     flex: 1;
     padding-left: 27.5rem; 
-    margin-left: 25rem ;
+    margin-left: 25rem;
     transition: transform 0.3s ease;
- 
 }
 
 .HeaderDashboard__Link {
@@ -45,13 +44,13 @@
     margin: 0 20px;
 }
 
-
 .HeaderDashboard__MenuToggle {
     display: none;
     background: transparent;
     border: none;
     cursor: pointer;
     z-index: 1;
+    outline: none;
 }
 
 .HeaderDashboard__MenuIcon {
@@ -59,6 +58,7 @@
     height: 2px;
     background-color: var(--azul-forte);
     position: relative;
+    transition: background-color 0.3s;
 }
 
 .HeaderDashboard__MenuIcon::before,
@@ -69,7 +69,7 @@
     background-color: var(--azul-forte);
     position: absolute;
     left: 0;
-    transition: 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .HeaderDashboard__MenuIcon::before {
@@ -121,25 +121,27 @@
     color: var(--offwhite);
 }
 
-
 @media (max-width: 840px) {
     .HeaderDashboard__Nav {
         display: none;
-        margin-left: 0rem ;
+        margin-left: 0;
+    }
 
+    .Logo__Img{
+        width: 120px; 
+        height: auto;
+        margin-left: 15px;
     }
 
     .HeaderDashboard__Logo {
-        width: 80px;
+        width: 120px; 
         height: auto;
-        margin-right: 120px;
-        margin-top: 5px;
+       
     }
 
     .HeaderDashboard__MenuToggle {
         display: flex;
         align-items: center;
-        margin: 0; 
     }
 
     .HeaderDashboard {
@@ -167,14 +169,28 @@
 
     .HeaderDashboard__UserSection {
         display: flex;
-        align-items: flex-start;
         flex-direction: column;
         text-align: center;
         margin-left: auto; 
+        align-items: center;
     }
 
     .HeaderDashboard__Logout {
         font-size: 14px;
-
     }
+}
+
+
+.HeaderDashboard__MenuToggle.HeaderDashboard__MenuToggle--aberto .HeaderDashboard__MenuIcon {
+    background-color: transparent;
+}
+
+.HeaderDashboard__MenuToggle.HeaderDashboard__MenuToggle--aberto .HeaderDashboard__MenuIcon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.HeaderDashboard__MenuToggle.HeaderDashboard__MenuToggle--aberto .HeaderDashboard__MenuIcon::after {
+    transform: rotate(-45deg);
+    top: 0;
 }

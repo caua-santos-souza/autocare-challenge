@@ -64,7 +64,7 @@ const FormLogin = () => {
                             />
                         </div>
                         {mensagemErro && <p className="error-message">{mensagemErro}</p>}
-                        <button type="submit">Entrar</button>
+                        <button className='botao__login' type="submit">Entrar</button>
                         <p className='Login__container__registrar'>
                             Ainda não tem uma conta? <Link to='/cadastro' className='input__ancora'>Inscreva-se</Link>
                         </p>
