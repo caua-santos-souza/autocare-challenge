@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Se houver um arquivo CSS para estilização
+import './Footer.css'; 
 import fiap from './assets/Fiap.svg';
 import auto from './assets/Autocare__Footer.svg';
 import porto from './assets/Porto.svg';

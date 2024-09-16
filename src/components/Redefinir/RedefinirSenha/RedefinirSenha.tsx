@@ -24,10 +24,10 @@ const RedefinirSenha: React.FC = () => {
             return;
         }
 
-        // Lógica para atualizar a senha
+       
         console.log("Senha redefinida com sucesso");
 
-        navigate('/login'); // Redireciona para a página de login após a redefinição da senha
+        navigate('/login'); 
     };
 
     return (

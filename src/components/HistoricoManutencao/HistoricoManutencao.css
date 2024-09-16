@@ -26,19 +26,19 @@
 
 @media (max-width: 768px) {
     .historico-manutencao {
-        padding: 15px; /* Reduz o padding */
+        padding: 15px; 
     }
 
     .historico-manutencao h2 {
-        font-size: 18px; /* Reduz o tamanho da fonte do título */
+        font-size: 18px; 
     }
 
     .historico-manutencao li {
-        font-size: 14px; /* Reduz o tamanho da fonte dos itens da lista */
+        font-size: 14px; 
     }
 
     .btn {
-        font-size: 14px; /* Reduz o tamanho da fonte do botão */
-        padding: 8px; /* Reduz o padding do botão */
+        font-size: 14px; 
+        padding: 8px; 
     }
 }

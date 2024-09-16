@@ -1,6 +1,6 @@
 import React from 'react';
-import ItemFAQ from './ItemFaq/ItemFaq'; // Importe o componente ItemFAQ
-import './Faq.css'; // Importe o arquivo CSS para a animação
+import ItemFAQ from './ItemFaq/ItemFaq'; 
+import './Faq.css'; 
 
 const FAQ: React.FC = () => {
     return (

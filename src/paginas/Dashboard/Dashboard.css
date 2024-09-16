@@ -1,7 +1,7 @@
-/* Dashboard.css */
+
 .dashboard-conteudo {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas em telas maiores */
+    grid-template-columns: 1fr 1fr; 
     padding: 20px;
     gap: 20px;
 }
@@ -11,54 +11,53 @@
     margin-left: 20px;
 }
 
-/* Media Queries - Responsividade */
+
 @media (max-width: 840px) {
     .dashboard-conteudo {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
-        padding: 10px; /* Reduz o padding */
+        grid-template-columns: 1fr; 
+        padding: 10px; 
     }
 
     .Titulo__dashboard {
-        font-size: 24px; /* Reduz o tamanho da fonte do título */
-        margin-left: 10px; /* Reduz a margem esquerda */
+        font-size: 24px; 
+        margin-left: 10px; 
     }
 
-    /* ResumoVeiculo.css */
+  
     .resumo-veiculo {
-        flex-direction: column; /* Empilha a imagem e o texto */
-        align-items: flex-start; /* Alinha os itens à esquerda */
+        flex-direction: column; 
+        align-items: flex-start;
     }
 
     .veiculo-imagem {
-        position: relative; /* Remove o posicionamento absoluto */
-        width: 100%; /* Imagem ocupa a largura total */
-        margin-bottom: 10px; /* Adiciona margem inferior */
-        right: 0; /* Remove a distância da borda direita */
-        top: 0; /* Remove a distância do topo */
+        position: relative; 
+        width: 100%; 
+        margin-bottom: 10px; 
+        right: 0; 
+        top: 0;
     }
 
-    /* HistoricoManutencao.css */
     .historico-manutencao h2 {
-        font-size: 18px; /* Reduz o tamanho da fonte do título */
+        font-size: 18px; 
     }
 
     .historico-manutencao li {
-        font-size: 14px; /* Reduz o tamanho da fonte dos itens da lista */
+        font-size: 14px; 
     }
 
-    /* Agendamentos.css */
+ 
     .agendamentos h2 {
-        font-size: 18px; /* Reduz o tamanho da fonte do título */
+        font-size: 18px;
     }
 
-    /* NotificacoesAlertas.css */
+
     .CardNotificacoesAlertas h2 {
-        font-size: 18px; /* Reduz o tamanho da fonte do título */
+        font-size: 18px; 
     }
 
-    /* Estilos gerais para botões */
+   
     .btn {
-        font-size: 14px; /* Reduz o tamanho da fonte do botão */
-        padding: 8px; /* Reduz o padding do botão */
+        font-size: 14px; 
+        padding: 8px;
     }
 }

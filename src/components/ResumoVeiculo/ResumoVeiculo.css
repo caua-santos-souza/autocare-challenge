@@ -1,4 +1,4 @@
-/* src/components/Dashboard/ResumoVeiculo.css */
+
 
 .resumo-veiculo {
     background-color: var(--branco);
@@ -6,16 +6,16 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center; /* Alinha verticalmente os itens no centro */
-    gap: 20px; /* Espaço entre a imagem e o texto */
-    position: relative; /* Permite posicionar elementos filhos de forma absoluta se necessário */
+    align-items: center; 
+    gap: 20px; 
+    position: relative; 
 }
 
 .veiculo-imagem {
-    width: 150px; /* Ajuste o tamanho conforme necessário */
-    position: absolute; /* Posiciona a imagem em relação ao card */
-    right: 20px; /* Ajuste a distância da borda direita */
-    top: 20px; /* Ajuste a distância do topo para centralizar verticalmente */
+    width: 150px;
+    position: absolute; 
+    right: 20px; 
+    top: 20px; 
 }
 
 .veiculo-imagem img {
@@ -25,7 +25,7 @@
 }
 
 .veiculo-info {
-    flex: 1; /* Faz com que a seção de informações ocupe o espaço restante */
+    flex: 1; 
 }
 
 .veiculo-info p {
@@ -42,7 +42,7 @@
     font-size: 16px;
     text-transform: uppercase;
     transition: background-color 0.3s;
-    margin-top: 20px; /* Adiciona um espaço acima do botão */
+    margin-top: 20px; 
 }
 
 .btn:hover {

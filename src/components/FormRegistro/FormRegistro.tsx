@@ -4,7 +4,7 @@ import './FormRegistro.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 const FormRegistro = () => {
-    const [etapa, setEtapa] = useState(1); // Controle de etapas
+    const [etapa, setEtapa] = useState(1); 
     const [nome, setNome] = useState('');
     const [telefone, setTelefone] = useState('');
     const [cpf, setCpf] = useState('');
@@ -62,12 +62,9 @@ const FormRegistro = () => {
     const handleMarcaChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setMarca(e.target.value);
     };
-
-    // Função para lidar com a navegação entre etapas
     const nextStep = (e: React.FormEvent) => {
         e.preventDefault();
 
-        // Validação básica por etapa
         if (etapa === 1 && (!nome || !telefone || !cpf)) {
             setMensagemErro('Por favor, preencha todos os campos corretamente.');
             return;

@@ -1,4 +1,4 @@
-/* VerificarCodigo.css */
+
 
 .VerificarCodigo__container {
     display: flex;
@@ -102,29 +102,29 @@ button:hover {
     }
   
     .VerificarCodigo__Img {
-      display: none; /* Esconde a imagem na responsividade */
+      display: none;
     }
   
     .VerificarCodigo__conteudo {
-      margin: 0; /* Remove a margem do conteúdo */
+      margin: 0; 
     }
   
     .VerificarCodigo__titulo {
-      font-size: 20px; /* Reduz o tamanho do título */
+      font-size: 20px; 
     }
   
     .VerificarCodigo__conteudo p {
-      font-size: 16px; /* Reduz o tamanho do parágrafo */
+      font-size: 16px; 
     }
   
     .input-solicitar {
-      margin-bottom: 15px; /* Reduz a margem inferior dos inputs */
+      margin-bottom: 15px; 
       width: 90%;
     }
   
     .Botao__Verificar {
-      font-size: 14px; /* Reduz o tamanho da fonte do botão */
-      padding: 8px; /* Reduz o padding do botão */
+      font-size: 14px;
+      padding: 8px; 
       width: 90%;
     }
   }

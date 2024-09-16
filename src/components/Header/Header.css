@@ -6,10 +6,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    /* Alinha verticalmente os itens */
     justify-content: space-between;
     position: relative;
-    /* Adiciona o contexto para o menu hambúrguer */
 }
 
 .Header__Logo {
@@ -23,7 +21,6 @@
     padding-left: 27.5rem;
     transition: transform 0.3s ease;
 
-    /* Transição para o menu hambúrguer */
 }
 
 .Header__Link {
@@ -44,40 +41,33 @@
     background-color: transparent;
     border: 2px solid var(--azul-forte);
     padding: 6px 12px;
-    /* Ajustado para um padding mais consistente */
     border-radius: 5px;
     text-decoration: none;
     color: var(--azul-forte);
     font-weight: 400;
     font-size: 18px;
-    /* Ajusta o tamanho da fonte para estar em linha com outros links */
     transition: background-color 0.3s, color 0.3s;
 }
 
 .Header__Login:hover {
     background-color: var(--azul-forte);
     color: var(--offwhite);
-    /* Ajusta a cor do texto no hover */
 }
 
 .Header__Separator {
     width: 2px;
     height: 80px;
-    /* Ajuste a altura da barra de separação */
     background-color: var(--cinza-medio);
     margin: 0 20px;
-    /* Ajuste o espaçamento ao redor do separador */
 }
 
-/* Estilos para o menu hambúrguer */
+
 .Header__MenuToggle {
     display: none;
-    /* Oculta o botão por padrão */
     background: transparent;
     border: none;
     cursor: pointer;
     z-index: 1;
-    /* Garante que o botão fique acima dos outros elementos */
 }
 
 .Header__MenuIcon {
@@ -111,7 +101,6 @@
     flex-direction: column;
     position: absolute;
     top: 130px;
-    /* Ajusta a posição abaixo do cabeçalho */
     left: 0;
     width: 100%;
     background-color: var(--offwhite);
@@ -119,17 +108,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para dispositivos móveis */
 @media (max-width: 840px) {
     .Header__Nav {
         display: none;
-        /* Oculta a navegação padrão em dispositivos móveis */
     }
 
     .Header__Logo {
         width: auto;
         height: auto;
-        margin-right: 40px; /* Adiciona margem direita à logo */
+        margin-right: 40px; 
     }
 
     .Logo{
@@ -141,7 +128,6 @@
     .Header__Login {
         font-size: 10px;
         padding: 3px 6px;
-        /* margin-left: auto; */ /* Remove a margem esquerda do botão */
         white-space: nowrap;
     }
 
@@ -156,8 +142,8 @@
         width: 100%;
         height: 85px;
         display: flex;
-        flex-direction: row; /* Mantém a ordem dos elementos (logo, menu, botão) */
-        justify-content: space-between; /* Distribui o espaço entre os elementos */
+        flex-direction: row; 
+        justify-content: space-between; 
         align-items: center;
         text-align: center;
     }
@@ -168,7 +154,6 @@
 
     .Header__Nav--aberto {
         display: flex;
-        /* Mostra o menu hambúrguer quando aberto */
     }
 
     .Header__Nav--aberto .Header__Link {

@@ -13,13 +13,12 @@ const Contato: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Validação básica
     if (!nome || !email || !mensagem) {
       setErro('Por favor, preencha todos os campos.');
       return;
     }
 
-    // Verificar se o email é válido
+
     if (!isValidEmail(email)) {
       setErro('Por favor, insira um endereço de email válido.');
       return;
@@ -28,7 +27,6 @@ const Contato: React.FC = () => {
     setCarregando(true);
     setErro(null);
 
-    // Parâmetros para o template do EmailJS
     const templateParams = {
       nome,
       email,
@@ -37,10 +35,10 @@ const Contato: React.FC = () => {
 
     try {
       await emailjs.send(
-        'service_7ky7mpj', // Substitua pelo seu Service ID
-        'template_ffgt22p', // Substitua pelo seu Template ID
+        'service_7ky7mpj', 
+        'template_ffgt22p',
         templateParams,
-        '-APsGrdM4xbW0jO10' // Sua chave pública (Public Key)
+        '-APsGrdM4xbW0jO10' 
       );
       setEnviado(true);
     } catch (error) {

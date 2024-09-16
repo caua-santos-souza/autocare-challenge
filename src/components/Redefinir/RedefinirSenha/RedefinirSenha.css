@@ -85,32 +85,32 @@ button:hover {
     }
   
     .RedefinirSenha__Img {
-      display: none; /* Esconde a imagem na responsividade */
+      display: none; 
     }
   
     .RedefinirSenha__conteudo {
-      margin: 0; /* Remove a margem do conteúdo */
+      margin: 0; 
      
     }
   
     .RedefinirSenha__titulo {
-      font-size: 20px; /* Reduz o tamanho do título */
+      font-size: 20px; 
       
     }
   
     .RedefinirSenha__conteudo p {
-      font-size: 16px; /* Reduz o tamanho do parágrafo */
+      font-size: 16px; 
       width: 90%;
     }
   
     .input-redefinir {
-      margin-bottom: 15px; /* Reduz a margem inferior dos inputs */
+      margin-bottom: 15px; 
       width: 90%;
     }
   
     .Botao__Redefinir {
-      font-size: 14px; /* Reduz o tamanho da fonte do botão */
-      padding: 8px; /* Reduz o padding do botão */
+      font-size: 14px; 
+      padding: 8px; 
       width: 90%;
     }
   }

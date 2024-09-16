@@ -14,14 +14,13 @@ const VerificarCodigo: React.FC = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Substitua pelo código fixo ou lógica de verificação real
+     
         if (codigo !== '357693') {
             setMensagemErro('Código de verificação inválido.');
             return;
         }
 
-        // Navegação para a URL absoluta
-        navigate('/redefinir/redefinir-senha'); // Navega para a página de redefinição de senha
+        navigate('/redefinir/redefinir-senha'); 
     };
 
     return (

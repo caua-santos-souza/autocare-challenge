@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative; /* Adiciona o contexto para o menu hambúrguer */
+    position: relative; 
 }
 
 .HeaderDashboard__Logo {
@@ -18,10 +18,10 @@
 .HeaderDashboard__Nav {
     display: flex;
     flex: 1;
-    padding-left: 27.5rem; /* Ajuste conforme necessário */
+    padding-left: 27.5rem; 
     margin-left: 25rem ;
     transition: transform 0.3s ease;
-    /* Transição para o menu hambúrguer */
+ 
 }
 
 .HeaderDashboard__Link {
@@ -45,7 +45,7 @@
     margin: 0 20px;
 }
 
-/* Estilos para o menu hambúrguer */
+
 .HeaderDashboard__MenuToggle {
     display: none;
     background: transparent;
@@ -84,7 +84,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 80px; /* Posição ajustada do menu aberto */
+    top: 80px; 
     left: 0;
     width: 100%;
     background-color: var(--offwhite);
@@ -121,7 +121,7 @@
     color: var(--offwhite);
 }
 
-/* Estilos para dispositivos móveis */
+
 @media (max-width: 840px) {
     .HeaderDashboard__Nav {
         display: none;

@@ -21,16 +21,16 @@ const SolicitarCodigo: React.FC = () => {
             return;
         }
 
-        // Parâmetros para o EmailJS
+       
         const templateParams = {
-            to_email: email, // Passando o email do input
-            code: '357693', // Código fixo para o exemplo
+            to_email: email, 
+            code: '357693', 
         };
 
         emailjs.send('service_7ky7mpj', 'template_12kxbgc', templateParams, '-APsGrdM4xbW0jO10')
             .then((response) => {
                 console.log('E-mail enviado com sucesso:', response);
-                navigate('verificar-codigo'); // Navega para a página de verificação de código
+                navigate('verificar-codigo'); 
             })
             .catch((error) => {
                 console.error('Erro ao enviar o e-mail:', error);

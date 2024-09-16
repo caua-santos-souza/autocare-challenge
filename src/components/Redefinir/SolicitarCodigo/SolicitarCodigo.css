@@ -86,29 +86,29 @@ button:hover {
     }
   
     .SolicitarCodigo__Img {
-      display: none; /* Esconde a imagem na responsividade */
+      display: none; 
     }
   
     .SolicitarCodigo__conteudo {
-      margin: 0; /* Remove a margem do conteúdo */
+      margin: 0; 
     }
   
     .SolicitarCodigo__titulo {
-      font-size: 20px; /* Reduz o tamanho do título */
+      font-size: 20px; 
     }
   
     .SolicitarCodigo__conteudo p {
-      font-size: 16px; /* Reduz o tamanho do parágrafo */
+      font-size: 16px; 
     }
   
     .input-solicitar {
       margin-bottom: 15px;
-      width: 90%; /* Reduz a margem inferior dos inputs */
+      width: 90%; 
     }
   
     .botao__solicitar {
-      font-size: 14px; /* Reduz o tamanho da fonte do botão */
-      padding: 8px; /* Reduz o padding do botão */
+      font-size: 14px; 
+      padding: 8px; 
       width: 90%;
       
     }
