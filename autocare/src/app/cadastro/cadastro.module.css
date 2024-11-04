@@ -1,0 +1,139 @@
+.Registro__container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+
+}
+
+.Registro__Img {
+    width: 51%;
+    height: auto;
+}
+
+.Registro__conteudo {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 40px 120px;
+    gap: 16px;
+}
+
+.Registro__titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.input_registro {
+    margin-bottom: 20px;
+}
+
+.input_registro label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input_registro input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--cinza-medio);
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 53px;
+}
+
+
+.Botão__registro {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--azul-forte);
+    color: var(--branco);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 56px;
+    margin-bottom: 10px;
+}
+
+.button_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.Botão__registro:hover {
+    background-color: var(--azul-destaque);
+}
+
+
+.error_message {
+    color: red;
+    margin-top: 10px;
+}
+
+
+.Registro__container__login {
+    margin-top: 32px;
+    display: flex;
+    gap: 5px;
+}
+
+.input__ancora {
+    text-decoration: none;
+    color: var(--azul-forte);
+}
+
+.input__ancora:hover {
+    color: var(--azul-destaque);
+}
+
+
+@media (max-width: 840px) {
+    .Registro__container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .Registro__Img {
+        display: none;
+    }
+
+    .Registro__conteudo {
+        margin: 0;
+    }
+
+    .Registro__titulo {
+        font-size: 20px;
+
+    }
+
+    .Registro__conteudo p {
+        font-size: 16px;
+       
+    }
+
+    .input_registro {
+        margin-bottom: 15px;
+        width: 90%;
+    }
+
+    .Registro__container__login {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .Botão__registro {
+        width: 90%;
+        font-size: 14px;
+        padding: 8px;
+    }
+   .Botão__registro
+     {
+        font-size: 14px;
+        padding: 8px;
+
+    }
+}

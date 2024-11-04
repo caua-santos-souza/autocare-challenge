@@ -1,0 +1,42 @@
+:root {
+  --azul-destaque: #1687A7;
+  --fonte: 'Poppins', sans-serif;;
+  --azul-medio: #0F718D;
+  --azul-escuro: #276678;
+  --azul-forte: #3A6AD6;
+  --preto: #000000;
+  --cinza-fonte: #564F4F;
+  --cinza-medio: #D9D9D9;
+  --offwhite: #F6F5F5;
+  --branco: #FFFFFF;
+}
+
+*{    /* mini reset.css */
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+background-color: var(--offwhite);
+font-family: var(--fonte);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--azul-destaque);
+
+}
+
+::-webkit-scrollbar-track {
+  background: var(--offwhite);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--azul-escuro); 
+}
+

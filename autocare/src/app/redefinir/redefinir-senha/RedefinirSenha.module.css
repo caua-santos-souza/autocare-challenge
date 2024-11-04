@@ -1,0 +1,116 @@
+.RedefinirSenha__container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.RedefinirSenha__Img {
+    width: 51%;
+    height: 100%;
+}
+
+.RedefinirSenha__conteudo {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 40px 120px;
+    gap: 16px;
+}
+
+.RedefinirSenha__titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.input_redefinir {
+    margin-bottom: 20px;
+}
+
+.input_redefinir label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input_redefinir input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--cinza-medio);
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 53px;
+}
+
+.Botao__Redefinir {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--azul-forte);
+    color: var(--branco);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 56px;
+}
+
+.Botao__Redefinir:hover {
+    background-color: var(--azul-destaque);
+}
+
+.error_message {
+    color: red;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .RedefinirSenha__container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .RedefinirSenha__Img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .RedefinirSenha__conteudo {
+        margin: 0;
+    }
+}
+
+@media (max-width: 840px) {
+    .RedefinirSenha__container {
+      flex-direction: column;
+      margin: 20px;
+    }
+  
+    .RedefinirSenha__Img {
+      display: none; 
+    }
+  
+    .RedefinirSenha__conteudo {
+      margin: 0; 
+     
+    }
+  
+    .RedefinirSenha__titulo {
+      font-size: 20px; 
+      
+    }
+  
+    .RedefinirSenha__conteudo p {
+      font-size: 16px; 
+      width: 90%;
+    }
+  
+    .input_redefinir {
+      margin-bottom: 15px; 
+      width: 90%;
+    }
+  
+    .Botao__Redefinir {
+      font-size: 14px; 
+      padding: 8px; 
+      width: 90%;
+    }
+  }

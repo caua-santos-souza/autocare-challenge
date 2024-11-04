@@ -1,0 +1,130 @@
+
+
+.VerificarCodigo__container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.VerificarCodigo__Img {
+    width: 51%;
+    height: 100%;
+}
+
+.VerificarCodigo__conteudo {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 40px 120px;
+    gap: 16px;
+}
+
+.VerificarCodigo__titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.input_verificar {
+    margin-bottom: 20px;
+}
+
+.input_verificar label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input_verificar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--cinza-medio);
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 53px;
+}
+
+.Botao__Verificar {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--azul-forte);
+    color: var(--branco);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 56px;
+}
+
+.Botao__Verificar:hover {
+    background-color: var(--azul-destaque);
+}
+
+.error_message {
+    color: red;
+    margin-top: 10px;
+}
+
+.VerificarCodigo__container__login {
+    margin-top: 32px;
+    display: flex;
+    gap: 5px;
+}
+
+.input__ancora {
+    text-decoration: none;
+    color: var(--azul-forte);
+}
+
+.input__ancora:hover {
+    color: var(--azul-destaque);
+}
+
+@media (max-width: 840px) {
+    .VerificarCodigo__container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .VerificarCodigo__Img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .VerificarCodigo__conteudo {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .VerificarCodigo__container {
+      flex-direction: column;
+      margin: 20px;
+    }
+  
+    .VerificarCodigo__Img {
+      display: none;
+    }
+  
+    .VerificarCodigo__conteudo {
+      margin: 0; 
+    }
+  
+    .VerificarCodigo__titulo {
+      font-size: 20px; 
+    }
+  
+    .VerificarCodigo__conteudo p {
+      font-size: 16px; 
+    }
+  
+    .input_solicitar {
+      margin-bottom: 15px; 
+      width: 90%;
+    }
+  
+    .Botao__Verificar {
+      font-size: 14px;
+      padding: 8px; 
+      width: 90%;
+    }
+  }

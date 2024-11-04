@@ -1,0 +1,136 @@
+.vantagens {
+    margin: 30px 57px;
+    width: calc(100% - 114px); /* Ajuste a largura conforme necessário */
+}
+
+.vantagens_titulo {
+    position: relative;
+    font-size: 38px; /* Tamanho do título */
+    color: var(--cinza-fonte);
+    font-weight: 400;
+    padding-left: 20px; /* Espaço para o retângulo */
+    display: flex;
+    align-items: center;
+}
+
+.vantagens_titulo span {
+    font-weight: 600;
+}
+
+.vantagens_titulo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background-color: var(--azul-escuro);
+}
+
+.vantagens_cards {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte */
+    gap: 20px; /* Espaçamento entre os cards */
+    margin-top: 20px; /* Espaço abaixo do título */
+}
+
+.card_vantagem {
+    display: flex;
+    align-items: center;
+    background: none; 
+    border: none;
+    padding: 0;
+    width: calc(50% - 10px); /* Ajusta a largura para permitir o alinhamento dos cards */
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos nas dimensões */
+}
+
+.card_vantagem:nth-child(4),
+.card_vantagem:nth-child(5) {
+    margin-right: auto; /* Move os últimos dois cards para a direita */
+}
+
+.img_vantagem {
+    /* Definindo dimensões específicas para as imagens */
+    width: 158px; /* Ajuste conforme necessário */
+    height: 122px; /* Ajuste conforme necessário */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+    margin-right: 15px; /* Espaçamento entre a imagem e o texto */
+}
+
+.texto_vantagem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o texto à esquerda */
+}
+
+.texto_vantagem h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.texto_vantagem p {
+    font-size: 24px;
+    color: #666;
+}
+
+@media (max-width: 840px) {
+    .vantagens {
+        margin: 10px; /* Reduz as margens */
+        width: calc(100% - 40px); 
+    }
+
+    .vantagens_titulo {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        padding-left: 15px; /* Reduz o espaço para o retângulo */
+    }
+
+    .vantagens_titulo::before {
+        width: 6px; /* Reduz a largura do retângulo */
+    }
+
+    .vantagens_cards {
+        flex-direction: column; /* Empilha os cards verticalmente */
+        gap: 15px; /* Reduz o espaçamento entre os cards */
+    }
+
+    .card_vantagem {
+        width: 100%; /* Cada card ocupa a largura total da tela */
+        flex-direction: column; /* Empilha a imagem e o texto verticalmente */
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+    }
+
+    .img_vantagem {
+        width: 80%; /* Ajusta a largura da imagem */
+        height: auto;
+        margin-right: 0; /* Remove a margem direita da imagem */
+        margin-bottom: 10px; /* Adiciona margem inferior à imagem */
+    }
+
+    .texto_vantagem {
+        align-items: center; /* Centraliza o texto horizontalmente */
+        text-align: center;
+    }
+
+    .texto_vantagem h2 {
+        font-size: 20px; /* Reduz o tamanho da fonte do título do card */
+    }
+
+    .texto_vantagem p {
+        font-size: 16px; /* Reduz o tamanho da fonte da descrição do card */
+        text-align: center; /* Centraliza o texto da descrição */
+    }
+
+    .card_vantagem:nth-child(4),
+    .card_vantagem:nth-child(5) {
+        margin-right: 0; /* Remove a margem direita dos últimos dois cards */
+    }
+}
+
+@media (max-width: 560px) {
+
+    .vantagens_titulo {
+        font-size: 20px; /* Reduz o tamanho da fonte do título */
+    }
+
+}

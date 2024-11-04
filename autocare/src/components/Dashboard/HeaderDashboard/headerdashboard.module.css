@@ -1,0 +1,193 @@
+.HeaderDashboard {
+    width: 100%;
+    height: 130px;
+    background-color: var(--offwhite);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+}
+
+.HeaderDashboard__Logo {
+    width: 17rem;
+    height: 5rem;
+}
+
+.HeaderDashboard__Nav {
+    display: flex;
+    flex: 1;
+    padding-left: 27.5rem; 
+    margin-left: 20%;
+    transition: transform 0.3s ease;
+}
+
+.HeaderDashboard__Link {
+    margin: 0 15px;
+    color: var(--azul-forte);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.HeaderDashboard__Link:hover {
+    color: #0056b3;
+    text-decoration: overline;
+}
+
+.HeaderDashboard__Separator {
+    width: 2px;
+    height: 80px;
+    background-color: var(--cinza-medio);
+    margin: 0 20px;
+}
+
+.HeaderDashboard__MenuToggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    outline: none;
+}
+
+.HeaderDashboard__MenuIcon {
+    width: 30px;
+    height: 2px;
+    background-color: var(--azul-forte);
+    position: relative;
+}
+
+.HeaderDashboard__MenuIcon::before,
+.HeaderDashboard__MenuIcon::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: var(--azul-forte);
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.HeaderDashboard__MenuIcon::before {
+    top: -8px;
+}
+
+.HeaderDashboard__MenuIcon::after {
+    top: 8px;
+}
+
+.HeaderDashboard__Nav__aberto {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 130px; 
+    left: 0;
+    width: 100%;
+    background-color: var(--offwhite);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.HeaderDashboard__UserSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.HeaderDashboard__UserName {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.HeaderDashboard__Logout {
+    background-color: transparent;
+    border: 2px solid var(--azul-forte);
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--azul-forte);
+    font-weight: 400;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.HeaderDashboard__Logout:hover {
+    background-color: var(--azul-forte);
+    color: var(--offwhite);
+}
+
+@media (max-width: 840px) {
+    .HeaderDashboard__Nav {
+        display: none;
+        margin-left: 0;
+    }
+
+    .Logo__Img {
+        width: 120px; 
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .HeaderDashboard__Logo {
+        width: 120px; 
+        height: auto;
+    }
+
+    .HeaderDashboard__MenuToggle {
+        display: flex;
+        align-items: center;
+    }
+
+    .HeaderDashboard {
+        width: 100%;
+        height: 85px;
+        display: flex;
+        flex-direction: row; 
+        justify-content: flex-start; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .HeaderDashboard__Separator {
+        display: none;
+    }
+
+    .HeaderDashboard__Nav__aberto {
+        display: flex;
+    }
+
+    .HeaderDashboard__Nav__aberto .HeaderDashboard__Link {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .HeaderDashboard__UserSection {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: auto; 
+        align-items: center;
+    }
+
+    .HeaderDashboard__Logout {
+        font-size: 14px;
+    }
+}
+
+.HeaderDashboard__MenuToggle.HeaderDashboard__MenuToggle__aberto .HeaderDashboard__MenuIcon {
+    background-color: transparent;
+}
+
+.HeaderDashboard__MenuToggle.HeaderDashboard__MenuToggle__aberto .HeaderDashboard__MenuIcon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.HeaderDashboard__MenuToggle.HeaderDashboard__MenuToggle__aberto .HeaderDashboard__MenuIcon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}

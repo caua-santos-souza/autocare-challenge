@@ -1,0 +1,68 @@
+
+.CardNotificacoesAlertas {
+    background-color: var(--branco); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+
+}
+
+.CardNotificacoesAlertas h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.CardNotificacoesAlertas p {
+    margin-bottom: 20px;
+    color: var(--cinza-escuro);
+}
+
+.CardNotificacoesAlertas .btn {
+    background-color: var(--azul-forte);
+    color: var(--branco);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn {
+    background-color: var(--azul-forte);
+    color: var(--branco);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    margin-top: 20px; 
+}
+
+.btn:hover {
+    background-color: var(--azul-destaque);
+}
+
+.CardNotificacoesAlertas .btn:hover {
+    background-color: var(--azul-destaque);
+}
+
+@media (max-width: 840px) {
+    .CardNotificacoesAlertas h2 {
+        font-size: 18px; 
+    }
+
+    .CardNotificacoesAlertas {
+        text-align: left; 
+        align-items: flex-start; 
+      }
+
+   
+    .btn {
+        font-size: 14px; 
+        padding: 8px;
+    }
+}

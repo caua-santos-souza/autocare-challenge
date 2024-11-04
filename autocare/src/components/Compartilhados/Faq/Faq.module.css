@@ -1,0 +1,121 @@
+.faq {
+    margin: 30px 57px;
+}
+
+.faq__titulo {
+    position: relative;
+    font-size: 38px;
+    color: var(--cinza-fonte);
+    font-weight: 400;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.faq__titulo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background-color: var(--azul-escuro);
+}
+
+.item_faq {
+    border: 2px solid var(--cinza-medio);
+    border-radius: 4px;
+    overflow: hidden;
+    border-left: none;
+    border-right: none;
+}
+
+.pergunta_faq {
+    background-color: var(--offwhite);
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--fonte);
+    color: var(--cinza-fonte);
+    font-weight: 100;
+}
+
+
+.resposta_faq {
+    padding: 0 10px;
+    background-color: var(--branco);
+    color: var(--cinza-fonte);
+    height: 0; 
+    overflow: hidden;
+    transition: height 0.3s ease; 
+}
+
+.resposta_faq.aberto {
+    height: auto; 
+}
+
+.seta_faq {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--azul-destaque);
+    transition: transform 0.3s ease;
+    outline: none; 
+}
+
+
+.seta_faq:focus {
+    outline: none;
+}
+
+
+.seta_faq.aberto {
+    transform: rotate(180deg);
+}
+
+
+.seta_faq::before {
+    content: "";
+    display: none;
+}
+
+@media (max-width: 840px) {
+    .faq {
+        margin: 20px; 
+        width: calc(100% - 40px);
+    }
+
+    .faq__titulo {
+        font-size: 28px; 
+        padding-left: 15px;
+        margin-bottom: 30px; 
+    }
+
+    .faq__titulo::before {
+        width: 6px; 
+    }
+
+    .item_faq {
+        margin-bottom: 15px; 
+    }
+
+    .pergunta_faq {
+        padding: 8px;
+        font-size: 16px; 
+    }
+
+    .resposta_faq {
+        padding: 0; 
+        font-size: 14px; 
+    }
+
+    .seta_faq {
+        border-left: 5px solid transparent; 
+        border-right: 5px solid transparent;
+        border-top: 5px solid var(--azul-destaque);
+    }
+}
